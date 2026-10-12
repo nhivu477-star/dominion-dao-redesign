@@ -1,0 +1,10 @@
+node_modules/
+dist/
+artifacts/
+cache/
+.env*
+!.env.example
+.DS_Store
+report-evidence/
+*.docx
+*.pdf

@@ -1,0 +1,10 @@
+{
+  "name": "ptit-dominion-dao", "version": "1.0.0", "private": true,
+  "scripts": {
+    "dev": "vite --host 127.0.0.1", "build": "npm run compile && vite build",
+    "compile": "hardhat compile && node scripts/export-artifact.cjs",
+    "test": "hardhat test", "chain": "hardhat node", "deploy:local": "hardhat run scripts/deploy.cjs --network localhost"
+  },
+  "dependencies": {"react": "^19.0.0", "react-dom": "^19.0.0", "ethers": "^6.13.0"},
+  "devDependencies": {"vite": "^7.0.0", "@nomicfoundation/hardhat-ethers": "3.0.8", "hardhat": "2.26.3", "solc": "0.8.19", "@openzeppelin/contracts": "4.9.6"}
+}
